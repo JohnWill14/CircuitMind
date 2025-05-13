@@ -1,8 +1,6 @@
 package br.com.william.chapters.c003
 
-import kotlin.math.abs
-
-fun maxSubarraySum(array: IntArray): Int {
+fun kadane(array: IntArray): Int {
   if (array.isEmpty()) {
         return 0
   }
@@ -24,6 +22,6 @@ fun maxSubarraySum(array: IntArray): Int {
 }
 
 fun main() {
-    println(maxSubarraySum(intArrayOf(-2, 1, -3, 4, -1, 2, 1, -5, 4)))
-    println(maxSubarraySum(intArrayOf(-2, -1, -3, -4, -1, -2, -1, -5, -4)))
+    println(kadane(intArrayOf(-2, 1, -3, 4, -1, 2, 1, -5, 4)))
+    println(kadane(intArrayOf(-2, -1, -3, -4, -1, -2, -1, -5, -4)))
 }
